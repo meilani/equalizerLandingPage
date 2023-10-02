@@ -38,6 +38,8 @@ body {
 @media screen and (max-width: 767px) {
   body {
     background-image: url(./assets/bg-main-mobile.png);
+    background-position: right -250px top -250px;
+    background-size: auto;
   }
 }
 
@@ -124,6 +126,11 @@ header .container {
     padding: 3rem 1.5rem;
   }
 }
+@media screen and (max-width: 767px) {
+  header {
+    padding: 2.5rem 1.5rem;
+  }
+}
 
 .hero-section {
   margin-top: 3rem;
@@ -133,6 +140,13 @@ header .container {
   .hero-section {
     margin-top: 2rem;
     margin-bottom: 232px;
+    padding: 0 1.5rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hero-section {
+    margin-top: 1.5rem;
+    margin-bottom: 165px;
   }
 }
 .hero-section h2 {
@@ -145,19 +159,19 @@ header .container {
 @media screen and (max-width: 1130px) {
   .hero-section h2 {
     margin-bottom: 1.55rem;
+    font-size: 3.5rem;
+    max-width: 414px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hero-section h2 {
+    font-size: 2.5rem;
   }
 }
 .hero-section p {
   max-width: 825px;
 }
 @media screen and (max-width: 1130px) {
-  .hero-section {
-    padding: 0 1.5rem;
-  }
-  .hero-section h2 {
-    font-size: 3.5rem;
-    max-width: 414px;
-  }
   .hero-section p {
     max-width: 514px;
   }
@@ -165,6 +179,17 @@ header .container {
 
 .download-section {
   margin-bottom: 115px;
+}
+@media screen and (max-width: 1130px) {
+  .download-section {
+    padding: 0 1.5rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .download-section {
+    padding: 0;
+    margin-bottom: 0;
+  }
 }
 .download-section .container {
   position: relative;
@@ -184,6 +209,13 @@ header .container {
     background-position: 215px -40px;
   }
 }
+@media screen and (max-width: 767px) {
+  .download-section .background {
+    background-position: center top;
+    background-size: 75%;
+    height: 950px;
+  }
+}
 .download-section .phone-img {
   position: absolute;
   left: 102px;
@@ -196,6 +228,14 @@ header .container {
     aspect-ratio: 270/556;
     left: 64px;
     top: -130px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .download-section .phone-img {
+    width: 209px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -100px;
   }
 }
 .download-section .premium-card {
@@ -216,12 +256,26 @@ header .container {
     padding: 2.66rem;
   }
 }
+@media screen and (max-width: 767px) {
+  .download-section .premium-card {
+    max-width: 100%;
+    right: 0;
+    bottom: 0;
+    padding: 3rem 2.625rem;
+  }
+}
 .download-section .premium-card h2 {
   margin-bottom: 0.6rem;
 }
 @media screen and (max-width: 1130px) {
   .download-section .premium-card h2 {
     line-height: 1.25;
+  }
+}
+@media screen and (max-width: 767px) {
+  .download-section .premium-card h2 {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
   }
 }
 .download-section .premium-card p {
@@ -233,8 +287,20 @@ header .container {
     line-height: 1.55;
   }
 }
+@media screen and (max-width: 767px) {
+  .download-section .premium-card p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+  }
+}
 .download-section .premium-card p:first-of-type {
   margin-bottom: 2rem;
+}
+@media screen and (max-width: 767px) {
+  .download-section .premium-card p:first-of-type {
+    font-size: 1.125rem;
+    margin-bottom: 1.8rem;
+  }
 }
 .download-section .premium-card p span {
   font-size: 3.25rem;
@@ -246,6 +312,11 @@ header .container {
 @media screen and (max-width: 1130px) {
   .download-section .premium-card p span {
     font-size: 3.6rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .download-section .premium-card p span {
+    font-size: 4.06rem;
   }
 }
 .download-section .premium-card .btn-group {
@@ -264,6 +335,17 @@ header .container {
   padding: 15px 1rem 14px;
   transition: background-color 0.3s ease;
 }
+@media screen and (max-width: 767px) {
+  .download-section .premium-card .btn {
+    font-size: 1.125rem;
+    line-height: 1.78;
+  }
+}
+@media screen and (max-width: 767px) {
+  .download-section .premium-card .btn img {
+    transform: translateY(-2px);
+  }
+}
 .download-section .premium-card .apple-btn {
   background-color: #191826;
 }
@@ -277,11 +359,6 @@ header .container {
 .download-section .premium-card .android-btn:hover {
   background-color: #FFB964;
 }
-@media screen and (max-width: 1130px) {
-  .download-section {
-    padding: 0 1.5rem;
-  }
-}
 
 footer {
   font-size: 0.8rem;
@@ -292,9 +369,19 @@ footer {
     padding: 4.72rem 1.83rem;
   }
 }
+@media screen and (max-width: 767px) {
+  footer {
+    padding: 4rem 1.5rem 5rem;
+  }
+}
 footer .container {
   display: flex;
   justify-content: space-between;
+}
+@media screen and (max-width: 767px) {
+  footer .container {
+    flex-direction: column;
+  }
 }
 footer .container .left {
   width: 60%;
@@ -307,6 +394,11 @@ footer .container .left {
     gap: 32px;
   }
 }
+@media screen and (max-width: 767px) {
+  footer .container .left {
+    width: 100%;
+  }
+}
 footer .container .left p {
   max-width: 366px;
 }
@@ -315,9 +407,21 @@ footer .container .left p {
     font-size: 0.89rem;
   }
 }
+@media screen and (max-width: 767px) {
+  footer .container .left p {
+    max-width: 297px;
+    font-size: 1rem;
+  }
+}
 footer .container .right {
   width: 40%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
+}
+@media screen and (max-width: 767px) {
+  footer .container .right {
+    justify-content: flex-start;
+    width: 100%;
+  }
 }/*# sourceMappingURL=index.css.map */

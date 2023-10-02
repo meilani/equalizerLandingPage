@@ -18,7 +18,6 @@ const PremiumCard = () => {
                         alt="apple logo"
                         width="17"
                         height="20"
-                        loading='lazy'
                     />
                     iOS Download
                 </a>
@@ -28,7 +27,6 @@ const PremiumCard = () => {
                         alt="android logo"
                         width="17"
                         height="20"
-                        loading='lazy'
                     />
                     Android Download
                 </a>

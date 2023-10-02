@@ -12,7 +12,6 @@ const Footer = () => {
                         alt="equalizer"
                         width="146"
                         height="32"
-                        loading='lazy'
                     />
                     <p>
                         All rights reserved © Equalizer {year} <br />

@@ -11,7 +11,6 @@ const DownloadSection = () => {
                     alt="a phone showing the equalizer treble boost interface"
                     width="312"
                     height="642"
-                    loading='lazy'
                     className='phone-img'
                 />
                 <PremiumCard />
